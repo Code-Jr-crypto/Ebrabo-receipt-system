@@ -1,0 +1,218 @@
+:root {
+  --tra-yellow: rgb(259,229,15);
+  --tra-black: #111;
+  --tra-bg: #fdf8e3;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--tra-bg);
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #111;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar h2 {
+  color: rgb(259,229,15);
+  margin-bottom: 30px;
+}
+
+.sidebar button {
+  background: rgb(259,229,15);
+  color: black;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar button:hover {
+  background: #fff36a;
+  box-shadow: 0 0 10px rgb(259,229,15);
+}
+
+
+
+/* Main workspace */
+.workspace {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.topbar {
+  background: white;
+  padding: 15px 20px;
+  border-bottom: 2px solid #ddd;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Two column panel */
+.panel {
+  flex: 1;
+  display: flex;
+}
+
+.left, .right {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.left {
+  border-right: 2px solid #ddd;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+/* Buttons */
+button {
+  background: var(--tra-yellow);
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #e6c800;
+}
+
+.success {
+  background: #22c55e;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.dashboard { display:flex; height:100vh; }
+.sidebar {
+  width:220px;
+  background:#f4b400;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+.content { flex:1; padding:20px; }
+
+.card {
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+.form-grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
+}
+
+.success-popup {
+  background:#0f9d58;
+  color:white;
+  padding:10px;
+  position:fixed;
+  top:20px;
+  right:20px;
+  border-radius:8px;
+}
+
+.menu{
+  padding:15px;
+  margin:10px 0;
+  cursor:pointer;
+  background:#111;
+  border-radius:6px;
+  transition:0.3s;
+}
+.menu:hover{
+  background:#ffd600;
+  color:black;
+  box-shadow:0 0 10px #ffd600;
+}
+
+.dashboard { display:flex; height:100vh; }
+.sidebar {
+  width:220px;
+  background:#f4b400;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+.content { flex:1; padding:20px; }
+
+.card {
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+.form-grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
+}
+
+.success-popup {
+  background:#0f9d58;
+  color:white;
+  padding:10px;
+  position:fixed;
+  top:20px;
+  right:20px;
+  border-radius:8px;
+}
+
+
+.pos-btn {
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pos-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  filter: brightness(1.05);
+}
+
+.pos-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
