@@ -23,7 +23,7 @@ export default function Login({ setAuth }) {
 
   return (
     <div style={{ maxWidth: 400, margin: "100px auto" }}>
-      <h2>EBRABO Receipt Login</h2>
+      <h2>EBRABO RECEIPT LOGIN</h2>
 
       <input
         placeholder="Username"
